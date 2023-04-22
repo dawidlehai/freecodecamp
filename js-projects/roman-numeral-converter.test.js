@@ -69,8 +69,8 @@ describe("convertToRoman function", () => {
     expect(convertToRoman(97)).toBe("XCVII");
   });
 
-  test("should return XXIX when given 99", () => {
-    expect(convertToRoman(99)).toBe("XXIX");
+  test("should return XCIX when given 99", () => {
+    expect(convertToRoman(99)).toBe("XCIX");
   });
 
   test("should return CD when given 400", () => {
