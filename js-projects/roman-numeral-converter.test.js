@@ -1,6 +1,22 @@
 const convertToRoman = require("./roman-numeral-converter");
 
 describe("convertToRoman function", () => {
+  test("should throw when given 0", () => {
+    expect(() => convertToRoman(0)).toThrow(/range/);
+  });
+
+  test("should throw when given 4000", () => {
+    expect(() => convertToRoman(0)).toThrow(/range/);
+  });
+
+  test("should not throw when given 1", () => {
+    expect(() => convertToRoman(1)).not.toThrow(/range/);
+  });
+
+  test("should not throw when given 3999", () => {
+    expect(() => convertToRoman(3999)).not.toThrow(/range/);
+  });
+
   test("should return II when given 2", () => {
     expect(convertToRoman(2)).toBe("II");
   });
