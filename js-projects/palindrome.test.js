@@ -1,4 +1,4 @@
-const palindrome = require("./palindrome.js");
+const palindrome = require("./palindrome");
 
 test("eye -> true", () => {
   expect(palindrome("eye")).toBe(true);
