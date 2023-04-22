@@ -1,33 +1,35 @@
 const palindrome = require("./palindrome");
 
-test("eye -> true", () => {
-  expect(palindrome("eye")).toBe(true);
-});
+describe("palindrome function", () => {
+  test("should return true when given 'eye'", () => {
+    expect(palindrome("eye")).toBe(true);
+  });
 
-test("racecar -> true", () => {
-  expect(palindrome("racecar")).toBe(true);
-});
+  test("should return true when given 'racecar'", () => {
+    expect(palindrome("racecar")).toBe(true);
+  });
 
-test("RaceCar -> true", () => {
-  expect(palindrome("RaceCar")).toBe(true);
-});
+  test("should return true when given 'RaceCar'", () => {
+    expect(palindrome("RaceCar")).toBe(true);
+  });
 
-test("race CAR -> true", () => {
-  expect(palindrome("race CAR")).toBe(true);
-});
+  test("should return true when given 'race CAR'", () => {
+    expect(palindrome("race CAR")).toBe(true);
+  });
 
-test("2A3*3a2 -> true", () => {
-  expect(palindrome("2A3*3a2")).toBe(true);
-});
+  test("should return true when given '2A33a2'", () => {
+    expect(palindrome("2A33a2")).toBe(true);
+  });
 
-test("2A3 3a2 -> true", () => {
-  expect(palindrome("2A3 3a2")).toBe(true);
-});
+  test("should return true when given '2A3 3a2'", () => {
+    expect(palindrome("2A3 3a2")).toBe(true);
+  });
 
-test("2_A3*3#A2 -> true", () => {
-  expect(palindrome("2_A3*3#A2")).toBe(true);
-});
+  test("should return true when given '2_A33#A2'", () => {
+    expect(palindrome("2_A33#A2")).toBe(true);
+  });
 
-test("mars -> false", () => {
-  expect(palindrome("mars")).toBe(false);
+  test("should return false when given 'mars'", () => {
+    expect(palindrome("mars")).toBe(false);
+  });
 });
