@@ -1,4 +1,4 @@
-const telephoneCheck = require("./telephone-number-validator");
+const telephoneCheck = require("./telephone-number-validator.js");
 
 describe("telephoneCheck function", () => {
   test("should return true when given '1 555-555-5555'", () => {
